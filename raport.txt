@@ -1,0 +1,17 @@
+# Introduction
+The aim of this document is to look at theatre in Warsaw and answer questions:
+1. Is there any relation between rating of the theatre and number of venues around?
+2. Is there any relation between popularity of the theatre and number of venues around?
+This issues can be important when you want to establish your own theatre. 
+
+# Data
+Data for this paper was downloaded from wikipedia. There is an article in polish about theatres in Warsaw and this article has table of places with adresses. Basic on this table using googlemaps specific latitude and longitude was collected. After that each location was scoped using foursquare in 500m around to find places in each location. 
+
+# Methodology 
+Collected data was cleaned, scoped, summarised in many ways to zoom the structure. It was also shown on the folium map where each theatre is located. After that linear regression models were performed to find answer to the questions. 
+
+# Results 
+I found no relation between rating and number of venues around. I found also no relation between popularity of ratings and venues around. It seems that popularity and rating of the teatre depends on diffrent factors (like actors, plays, director, etc.) which were not included in this research. 
+
+# Conclusions
+Before final conclusion there i think it's worth to look for type of venues and rating and popularity (in fact this was the main purpose of this analysis). Unfortunately, foursquare classifies too many types of venues (around 200) and it can't be used to include 200 predictors in model with 50 observations. 
